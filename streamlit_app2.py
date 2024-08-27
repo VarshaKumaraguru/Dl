@@ -35,7 +35,7 @@ y_pred = model.predict(X_test_scaled)
 mse = mean_squared_error(y_test, y_pred)
 
 st.title('Temperature Prediction for Seoul, South Korea')
-st.write('Enter the following details to predict next day's maximum and minimum temperatures.')
+st.write('Enter the following details to predict next day maximum and minimum temperatures.')
 st.write(f'Mean Squared Error on the test set: {mse:.2f}')
 
 user_input = {}
