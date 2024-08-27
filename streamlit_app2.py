@@ -49,7 +49,3 @@ if st.button('Predict'):
     prediction = model.predict(user_scaled)
     st.write(f'Predicted Next Day Maximum Temperature: {prediction[0][0]:.2f}°C')
     st.write(f'Predicted Next Day Minimum Temperature: {prediction[0][1]:.2f}°C')
-    st.write(f'User input after scaling: {user_scaled}')
-    st.write(f'Model summary:')
-    model.summary(print_fn=lambda x: st.text(x))
-    st.write(f'History of loss values: {history.history["loss"]}')
